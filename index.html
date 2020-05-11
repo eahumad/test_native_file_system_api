@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST NATIVE FILE API</title>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.5/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.5/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.5/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+  <div class="uk-container">
+    <h1 class="uk-heading-small">Test para Native File API</h1>
+    <p class="uk-text-me">Native File API es un desarrollo que basado en File API, pero más moderno que permite el trabajo directo con archivos del sistema cliente</p>
+
+
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+      <h3 class="uk-card-title">Seleccionar carpeta en la cual se trabajará</h3>
+      <button type="button" class="uk-button uk-button-primary" id="btnSeleccionarCarpeta">Seleccionar</button>
+
+      <p>Carpeta seleccionada: <span id="nombre_directorio"></span></p>
+      <p>Contenido de la carpeta:</p>
+      <ul id="archivos">
+
+      </ul>
+    </div>
+
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+      <h3 class="uk-card-title">Crear un archivo de texto en la carpeta <span id="nombre_directorio2"></span></h3>
+      <div>
+        <label class="uk-form-label">nombre del archivo</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" id="nombre_archivo" type="text">
+        </div>
+
+        <label class="uk-form-label">Contenido</label>
+        <div class="uk-form-controls">
+          <textarea class="uk-input" id="texto_archivo"></textarea>
+        </div>
+      </div>
+      <button type="button" class="uk-button uk-button-primary" id="btnGrabarArchivoEnCarpeta">Grabar Archivo</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
